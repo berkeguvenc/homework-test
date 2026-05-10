@@ -70,10 +70,16 @@ describe("TodoList testleri", () => {
     await user.type(input, "Test");
     await user.click(addButton);
 
+    await user.type(input, "Test 2");
+    await user.click(addButton);
+
     const todoItem = screen.getByText("Test");
     await user.click(todoItem);
 
     const completedItem = screen.getByText("Test");
     expect(completedItem).toHaveStyle("text-decoration: line-through;");
+
+    const todoItem2 = screen.getByText("Test 2");
+    expect(todoItem2).not.toHaveStyle("text-decoration: line-through");
   });
 });

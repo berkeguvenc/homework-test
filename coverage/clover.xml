@@ -1,22 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1778355436160" clover="3.2.0">
-  <project timestamp="1778355436161" name="All files">
-    <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8" elements="29" coveredelements="29" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="sepet.ts" path="/Users/berkeguvenc/Documents/GitHub/backendguru/homework/homework-test/src/sepet.ts">
-      <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="21" count="6" type="stmt"/>
-      <line num="25" count="2" type="stmt"/>
-      <line num="26" count="3" type="stmt"/>
-      <line num="31" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="33" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="36" count="1" type="stmt"/>
-    </file>
+<coverage generated="1778455087524" clover="3.2.0">
+  <project timestamp="1778455087524" name="All files">
+    <metrics statements="47" coveredstatements="47" conditionals="32" coveredconditionals="32" methods="21" coveredmethods="21" elements="100" coveredelements="100" complexity="0" loc="47" ncloc="47" packages="2" files="4" classes="4"/>
+    <package name="src">
+      <metrics statements="29" coveredstatements="29" conditionals="26" coveredconditionals="26" methods="11" coveredmethods="11"/>
+      <file name="hava.ts" path="/Users/berkeguvenc/Documents/GitHub/backendguru/homework/homework-test/src/hava.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="selam.ts" path="/Users/berkeguvenc/Documents/GitHub/backendguru/homework/homework-test/src/selam.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="14" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+      </file>
+      <file name="sepet.ts" path="/Users/berkeguvenc/Documents/GitHub/backendguru/homework/homework-test/src/sepet.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="9" coveredmethods="9"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="31" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="6" methods="10" coveredmethods="10"/>
+      <file name="TodoList.tsx" path="/Users/berkeguvenc/Documents/GitHub/backendguru/homework/homework-test/src/components/TodoList.tsx">
+        <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="6" methods="10" coveredmethods="10"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="42" type="stmt"/>
+        <line num="13" count="42" type="stmt"/>
+        <line num="15" count="42" type="stmt"/>
+        <line num="16" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="24" count="42" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="42" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="42" type="stmt"/>
+        <line num="44" count="28" type="stmt"/>
+        <line num="50" count="22" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
