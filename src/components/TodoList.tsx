@@ -6,6 +6,8 @@ interface Todo {
   completed: boolean;
 }
 
+let nextId = 0;
+
 export const TodoList: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [input, setInput] = useState("");
@@ -14,7 +16,7 @@ export const TodoList: React.FC = () => {
     if (input.trim() === "") return;
     setTodos([
       ...todos,
-      { id: Date.now(), text: input.trim(), completed: false },
+      { id: nextId++, text: input.trim(), completed: false },
     ]);
     setInput("");
   };
@@ -36,6 +38,7 @@ export const TodoList: React.FC = () => {
       <h1>Todo List</h1>
       <div>
         <input
+          data-testid="todo-input"
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -46,7 +49,11 @@ export const TodoList: React.FC = () => {
         {todos.map((todo) => (
           <li key={todo.id}>
             <span onClick={() => handleToggle(todo.id)}>
-              {todo.completed ? <s>{todo.text}</s> : todo.text}
+              {todo.completed ? (
+                <p style={{ textDecoration: "line-through" }}>{todo.text}</p>
+              ) : (
+                <p>{todo.text}</p>
+              )}
             </span>
             <button onClick={() => handleDelete(todo.id)}>Sil</button>
           </li>
