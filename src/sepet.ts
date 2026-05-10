@@ -36,3 +36,8 @@ export function indirimUygula(toplam: number, kuponKodu: string): number {
     return toplam;
   }
 }
+
+export function sepetiBosalt(sepet: Urun[]): Urun[] {
+  sepet = [];
+  return sepet;
+}

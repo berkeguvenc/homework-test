@@ -3,6 +3,7 @@ import {
   urunSil,
   toplamHesapla,
   indirimUygula,
+  sepetiBosalt,
   type Urun,
 } from "./sepet";
 
@@ -63,5 +64,10 @@ describe("Ürün sepet servisi", () => {
   it("geçersiz kupon kodu", () => {
     const indirimliTutar = indirimUygula(100, "BERKE");
     expect(indirimliTutar).toBe(100);
+  });
+
+  it("sepeti boşalt", () => {
+    const sepet = sepetiBosalt(testSepet);
+    expect(sepet).toHaveLength(0);
   });
 });
