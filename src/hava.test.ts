@@ -1,7 +1,7 @@
 import { vi } from "vitest";
 import { havaDurumuGetir } from "./hava";
 
-describe("hava durumu servisi)", () => {
+describe("hava durumu servisi", () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
